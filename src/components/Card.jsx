@@ -1,6 +1,6 @@
 export default function Card({ data, darkMode }){
     return (
-      <div className={`flex flex-col items-center max-w-xs ${darkMode ? 'bg-gray-800' : 'bg-white'} p-4 rounded-md shadow-md text-black ${darkMode ? 'text-white' : 'text-black'}`}>
+      <div className={`flex flex-col items-center max-w-xs bg-bgColor p-4 rounded-md shadow-md text-txtColor`}>
         <img
           src={data.avatar_url}
           alt="profile"
@@ -9,7 +9,7 @@ export default function Card({ data, darkMode }){
         <p className="text-xl font-bold mb-2">{data.name}</p>
         <p className="text-sm font-thin mb-2">{data.location}</p>
         <p className="mb-4">{data.bio}</p>
-        <div className={`grid grid-cols-3 gap-4 p-2 rounded-md ${darkMode ? 'bg-gray-600' : 'bg-gray-200'}`}>
+        <div className={`grid grid-cols-3 gap-4 p-2 rounded-md bg-bdColor`}>
           <div className="text-center">
             <p className="font-bold">{data.public_repos}</p>
             <p className="text-xs">Public Repos</p>
