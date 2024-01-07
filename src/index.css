@@ -25,20 +25,20 @@
   --border-light: #cccccc;
   --border-dark: #486581;
 
-  --border-light: #cccccc;
-  --border-dark: #486581;
+  --btn-light: #377edb;
+  --btn-dark: #486581;
 
   --background: var(--background-light);
   --text: var(--text-dark);
   --border: var(--border-light);
-  --border: var(--border-light);
+  --btn: var(--btn-light);
 }
 
 .dark {
   --background: var(--background-dark);
   --text: var(--text-light);
   --border: var(--border-dark);
-  --border: var(--border-dark);
+  --btn: var(--btn-dark);
 }
 
 

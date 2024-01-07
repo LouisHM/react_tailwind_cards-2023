@@ -10,6 +10,7 @@ export default {
         'bgColor': 'var(--background)',
         'txtColor': 'var(--text)',
         'bdColor': 'var(--border)',
+        'btnColor': 'var(--btn)',
       },
     },
   },

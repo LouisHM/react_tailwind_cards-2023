@@ -1,4 +1,4 @@
-export default function Card({ data, darkMode }){
+export default function Card({ data }){
     return (
       <div className={`flex flex-col items-center max-w-xs bg-bgColor p-4 rounded-md shadow-md text-txtColor`}>
         <img

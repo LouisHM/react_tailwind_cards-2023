@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 
 import useFetch from './hooks/useFetch'
@@ -28,24 +28,27 @@ export default function App() {
             </label>
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className={` py-2 px-4 rounded-md focus:outline-none focus:ring bg-none flex gap-2 items-center`}
+              className={` py-2 px-4 rounded-md focus:outline-none focus:ring bg-inherit flex gap-2 items-center`}
             >
               <p className=''>{darkMode ? 'LIGHT' : 'DARK'}</p>
               <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className="fa-regular" />
             </button>
           </div>
         <div className={`max-w-xs p-2 shadow-md rounded-md bg-bgColor`}>
-          <form className="flex flex-row items-center justify-center  gap-4" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="user"
+          <form className="flex flex-row items-center justify-center  gap-3" onSubmit={handleSubmit}>
+            <div className='rounded-md bg-bdColor flex flex-row items-center gap-2 py-2 px-2'>
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-regular" />
+              <input
+                type="text"
+                name="user"
 
-              placeholder="Username"
-              className={`w-full p-2 border border-gray-300 rounded-md placeholder:text-txtColor focus:outline-none focus:ring focus:border-blue-300 bg-bdColor`}
-            />
+                placeholder="Username"
+                className={`bg-inherit rounded-md focus:outline-none focus:ring focus:border-green-300 text-txtColor w-40`}
+              />
+            </div>
             <button
               type="submit"
-              className={`bg-bdColor hover:bg-bdColor py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-green-300`}
+              className={`bg-btnColor hover:bg-bdColor py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-green-300 text-white`}
             >
               Chercher
             </button>
